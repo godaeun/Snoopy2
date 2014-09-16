@@ -1,17 +1,14 @@
 function setup() {
   createCanvas(680, 600);
-  background(255, 249, 174);
-  stroke(255,0,0);
+  background(123, 123, 123);
+  stroke(119,178,223);
 
-    
-    fill(250,80,90);
-    stroke(255,80,90);
+
+
+
     rect(0,0,20,20);
-    stroke(0,250,190);
     rect(20,0,20,20);
-    stroke(255,80,250);
     rect(40,0,20,20);
-    stroke(0,80,250);
     rect(60,0,20,20);
     rect(80,0,20,20);
     rect(100,0,20,20);
@@ -45,7 +42,7 @@ function setup() {
     rect(660,0,20,20);
     rect(680,0,20,20); 
 
-    fill(250,250,250);
+
     rect(0,20,20,20);
     rect(20,20,20,20);
     rect(40,20,20,20);
@@ -935,7 +932,6 @@ function setup() {
     rect(660,580,20,20);
     rect(680,580,20,20);  
 
-    fill(250,80,90);
     rect(0,600,20,20);
     rect(20,600,20,20);
     rect(40,600,20,20);
@@ -972,4 +968,18 @@ function setup() {
     rect(660,600,20,20);
     rect(680,600,20,20);  
 
+}
+
+function draw(){
+        
+
+  for (var x = 3; x <=6; x++)
+  {
+    fill(119,178,223);
+    ellipse(x * 20, x * 110, x + 50 , x * 10);
+  }
+
+ noFill();
+ var size = Math.abs(mouseX - 340);
+  ellipse(340, 300, mouseX, mouseY);
 }
