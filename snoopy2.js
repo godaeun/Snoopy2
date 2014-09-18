@@ -971,9 +971,11 @@ background(123, 123, 123);
     rect(660,600,20,20);
     rect(680,600,20,20);  
   for (var x = 3; x <=6; x++)
+
   {
     fill(119,178,223);
-    ellipse(x * 20, x * 110, x + 50 , x * 10);
+    var size = Math.abs(mouseX - 340);
+    ellipse(x * 10, x * 100, mouseX ,mouseY);
   }
 
  noFill();
