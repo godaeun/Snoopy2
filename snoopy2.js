@@ -1,10 +1,13 @@
 function setup() {
   createCanvas(680, 600);
   background(123, 123, 123);
+
+}
+
+function draw(){
+        
+background(255,255,255);
   stroke(119,178,223);
-
-
-
 
     rect(0,0,20,20);
     rect(20,0,20,20);
@@ -967,12 +970,6 @@ function setup() {
     rect(640,600,20,20);
     rect(660,600,20,20);
     rect(680,600,20,20);  
-
-}
-
-function draw(){
-        
-
   for (var x = 3; x <=6; x++)
   {
     fill(119,178,223);
